@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div.gallery {
+        border: 1px solid #ccc;
+    }
+    
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+    
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 25%;
+    }
+    
+    @media only screen and (max-width: 700px){
+        .responsive {
+            width: 50%;
+            margin: 6px 0;
+        }
+    }
+    
+    @media only screen and (max-width: 500px){
+        .responsive {
+            width: 100%;
+        }
+    }
+    
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    </style>
+<body>
+    <h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://media.baoquangninh.vn/dataimages/201809/original/images1098138_vinh_ha_long.jpg">
+      <img src="https://media.baoquangninh.vn/dataimages/201809/original/images1098138_vinh_ha_long.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://suckhoedoisong.qltns.mediacdn.vn/zoom/480_300/Images/bichvan/2019/01/06/viet-nam-diem-den-hap-dan-tren-the-gioi1546756720.jpg">
+      <img src="https://suckhoedoisong.qltns.mediacdn.vn/zoom/480_300/Images/bichvan/2019/01/06/viet-nam-diem-den-hap-dan-tren-the-gioi1546756720.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://suckhoedoisong.qltns.mediacdn.vn/zoom/480_300/324455921873985536/2023/9/17/hl0-16949194646441687515370-13-0-450-700-crop-1694919471316100346004.jpg">
+      <img src="https://suckhoedoisong.qltns.mediacdn.vn/zoom/480_300/324455921873985536/2023/9/17/hl0-16949194646441687515370-13-0-450-700-crop-1694919471316100346004.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://toplist.vn/images/800px/vinh-ha-long-quang-ninh-16081.jpg">
+      <img src="https://toplist.vn/images/800px/vinh-ha-long-quang-ninh-16081.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+</div>
+
+</body>
+</html>
