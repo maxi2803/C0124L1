@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        * {
+            box-sizing: border-box;
+            
+        }
+        .content{
+            
+            height: 400px;
+            float: left;
+            padding-right: 5px;
+            
+        }
+        .i1 {
+            width: 100%;
+            border: 1px solid rgb(132, 69, 69);
+            height: auto;
+
+        }
+        .i1 img {
+            width: 100%;
+            height: auto;
+        }
+        .i1:hover {
+            border: 1px solid black;
+        }
+        p {
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+        }
+        h1, h4 {
+            margin-bottom: 20px;
+        }   
+        .booter{
+            float: left;
+        }
+        @media screen and (min-width: 768px) {
+            .content { width: 25%;}
+           
+        }
+        @media screen and (max-width:768px) {
+            .content { width: 50%;}
+            
+        }
+        @media screen and (max-width: 576px) {
+            .content{width: 100%;}
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Responsive Image Gallery </h2>
+    <h4> Resize the browser window to see the effect.</h4>
+    <div class="content">
+        <div class="i1">
+            <a href="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" target="_blank">
+                <img src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" width="320px" height="200" alt="Responsive Image Gallery">
+            </a>
+            <p> Add a description of the image here </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="i1">
+            <a href="https://demo.codegym.vn/web/15/gallery/img_forest.jpg" target="_blank">
+                <img src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg"  width="320px" height="200" alt="Responsive Image Gallery">
+            </a>
+            <p> Add a description of the image here </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="i1">
+            <a href="https://demo.codegym.vn/web/15/gallery/img_lights.jpg" target="_blank">
+                <img src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg"  width="320px" height="200" alt="Responsive Image Gallery">
+            </a>
+            <p> Add a description of the image here </p>
+        </div>
+    </div>
+    <div class="content"> 
+        <div class="i1">
+            <a href="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" target="_blank">
+                <img src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" width="320px" height="200" alt="Responsive Image Gallery">
+            </a>       
+            <p> Add a description of the image here </p>
+        </div>
+    </div>
+    <div style="padding: 10px;" class="booter">
+        <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+    </div>
+</body>
+</html>
