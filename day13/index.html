@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "nav nav nav nav"
+        "main main main main"
+        "left1 left1 left1 right"
+        "left2 left2 left2 right"
+        "footer footer footer footer";
+        gap: 5px;
+    }
+    nav {
+        grid-area: nav;
+        background-color: blue;
+        height: 50px;
+    }
+    main {
+        grid-area: main;
+        text-align: center;
+    }
+    .i2 {
+        grid-area: left1;
+        text-align: center;
+        background-color: #D7D6D3;
+    }
+    .i3 {
+        grid-area: right;
+        text-align: center;
+        background-color: #D3D4D7;
+    }
+    .i4 {
+        grid-area: left2;
+        text-align: center;
+        background-color: #BDBCBB;
+    }
+    .i5 {
+        grid-area: footer;
+        text-align: center;
+        background-color: #3770F6;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+    ul li {
+        padding-left: 10px;
+    }
+    a {
+        color: white;
+    }
+    nav a {
+        font-size: 24px;
+    }
+    a:hover {
+        color: red;
+    }
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="item i1">
+            <h2>A Demo Site CSS Grid</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque pariatur possimus alias quod ratione incidunt dicta assumenda repudiandae optio eveniet, quisquam fuga! Nam eaque fuga similique quia, esse non libero?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo libero doloremque, eum quis laudantium hic iste ab sed ipsum veniam, quam dolor rem cupiditate corrupti aliquam repudiandae officia soluta impedit!</p>
+        </main>
+        <div class="item i2">
+            <h2>About</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatem reprehenderit non. Magni sit alias quia, vel quidem autem quos optio quam at porro aliquid necessitatibus aut et eos nulla.</p>
+        </div>
+        <div class="item i3">
+            <h2>Find Me on Social Media</h2>
+            <a href="#">Facebook</a>
+        </div>
+        <div class="item i4">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi consequuntur magnam ipsum, commodi quam, non dolorem numquam veritatis, qui nam voluptas asperiores neque magni. Placeat, natus reprehenderit. Fugit, voluptatum commodi.</p>
+        </div>
+        <div class="item i5">
+            <p>Copyright 2021 <a href="#">BW2109R1</a></p>
+        </div>
+    </div>
+</body>
+</html>
